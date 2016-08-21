@@ -1,0 +1,65 @@
+
+# to figure out which tty port is being used run: dmesg | grep tty
+
+import serial
+import time
+import findBeacon
+import avoidObstacles
+
+#main Loop(while luminerce < threshold_final value) right under the beacon
+ #step 1: find the driection of beacon(if all value < thershold_ambietd, go to step 2 )
+ #step 2: if there is an obstacle(yes go to step 3 No go to step 4)
+ #step 3: move foward(arduino.write(i)), go back to step 1)
+ #step 4: call avoid obstacles(), go back to step 1; 
+#rest
+
+
+
+
+
+threshhold_final
+threshhold_ambient
+
+ser = serial.Serial("/dev/ttyACM0", 115200)
+ser_write = serial.Serial("/dev/ttyUSB0",9600)
+
+ser.setDTR(True)
+time.sleep(1)
+er.setDTR(False)
+
+def swrite(s)
+ ser_write.write(s)
+#def sread()# ser.readline()
+#while True:
+#	lightVal = ser.readline()
+#	print lightVal
+
+
+
+
+
+while(ser.readline)
+
+
+
+
+
+
+
+
+
+
+
+
+swrite('o');
+start = time.time()
+while(time.time()-start<time_fullturn)
+ if(max<ord(ser.readline()))
+  max_lum = ord(ser.readline()) # get the max luminence value after one full turn
+
+while(ser.readline< max_lum-20) # start to turn, as long as not hit the max value, keep turning 
+ swrite('A')
+ 
+swrite('h')	# if found, stop
+
+

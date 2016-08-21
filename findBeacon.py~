@@ -1,0 +1,34 @@
+\# to figure out which tty port is being used run: dmesg | grep tty
+
+import serial
+import time
+threshhold_light
+threshhold_obs
+max_lum = 0
+time_fullturn
+
+cunnt # record the time needed to finish one turn
+
+ser = serial.Serial("/dev/ttyACM0", 115200)
+ser_write = serial.Serial("/dev/ttyUSB0",9600)
+
+ser.setDTR(True)
+time.sleep(1)
+ser.setDTR(False)
+
+def swrite(s)
+ ser_write.write(s)
+def sread()
+ return  int(ser.readline())
+#while True:
+#	lightVal = ser.readline()
+#	print lightVal
+
+swrite('o');
+start = time.time()
+while(time.time()-start<time_fullturn)
+ if(max<sread())
+  max_lum =sread(); # get the max luminence value after one full turn
+
+return max_lum  # return the max lumi
+
